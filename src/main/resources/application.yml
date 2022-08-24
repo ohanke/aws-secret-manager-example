@@ -1,0 +1,15 @@
+server:
+  port: 5000
+
+spring:
+  datasource:
+    url: jdbc:mysql://javatechiedb.cun6sprkqwvo.eu-central-1.rds.amazonaws.com:3306/javatechie
+    username: root
+    password: rootpassword
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    properties:
+      max_allowed_packet: 2000
